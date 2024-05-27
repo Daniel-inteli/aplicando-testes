@@ -16,7 +16,7 @@ namespace Temperatura.Testes
             double tempFahrenheit, double tempCelsius)
         {
             double valorCalculado =
-                ConversorTemperatura.FahrenheitParaCelsius(tempFahrenheit);
+                Conversor.FahrenheitParaCelsius(tempFahrenheit);
             Assert.AreEqual(tempCelsius, valorCalculado);
         }
     }

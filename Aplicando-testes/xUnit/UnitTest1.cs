@@ -1,8 +1,6 @@
 using System;
-using Temperatura;
-using Xunit;
 
-namespace Test.XUnit.Temperatura
+namespace Temperatura.Testes
 {
     public class TestesConversorTemperatura
     {
@@ -17,7 +15,7 @@ namespace Test.XUnit.Temperatura
             double fahrenheit, double celsius)
         {
             double valorCalculado =
-                ConversorTemperatura.FahrenheitParaCelsius(fahrenheit);
+                Conversor.FahrenheitParaCelsius(fahrenheit);
             Assert.Equal(celsius, valorCalculado);
         }
     }
